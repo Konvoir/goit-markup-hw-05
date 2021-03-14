@@ -356,6 +356,10 @@ a.link:hover::before {
   color: var(--greytext);
 }
 
+.teamate-network-item:not(:last-of-type) {
+  margin-right: 10px;
+}
+
 .teamate-network-link {
   display: inline-flex;
 
