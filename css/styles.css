@@ -606,10 +606,19 @@ background: rgba(255, 255, 255, 0.1);
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--background-main);
+  max-width: 528px;
+  width: 100%;
+  /* min-height: 581px; */
+  padding: 30px;
+  max-height: 100vh;
+  overflow-y: auto;
 }
+
 
 .close-button {
   position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
   /* section {
