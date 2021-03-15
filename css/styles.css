@@ -104,6 +104,7 @@ ul {
 }
 
 .link {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.172;
@@ -112,7 +113,7 @@ ul {
 
 .link.active::after {
   position: absolute;
-  bottom: 0;
+  bottom: -31px;
   content: '';
   display: block;
   width: 100%;
@@ -145,6 +146,7 @@ ul {
 a.link:focus,
 a.link:hover {
   color: var(--focus);
+  transition: color 250ms var(--bazier), background-color 250ms var(--bazier);
 }
 
 /* Hower */
@@ -324,7 +326,7 @@ a.link:hover::before {
 }
 
 .team-card {
-  padding: 30px 0;
+  padding: 30px 32px;
   background-color:var(--background-main);
   border-radius: 0px 0px 4px 4px;
 }
@@ -360,19 +362,27 @@ a.link:hover::before {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
   outline: none;
+  transition: color 250ms var(--bazier), background-color 250ms var(--bazier);
 }
 
 .teamate-networks {
   margin-top: 16px;
   display: flex;
-  justify-content: space-evenly;  
-  text-align: center;
-  color: var(--greytext);
-}
+  justify-content: space-between;
 
-.teamate-network-item:not(:last-of-type) {
+  /* text-align: center; */
+  /* align-items: ; */
+  color: var(--greytext);
+  }
+
+
+.teamate-networks:not(:last-child) {
   margin-right: 10px;
 }
+
+/* .teamate-network-item:not(:last-of-type) {
+  margin-right: 10px;
+} */
 
 .teamate-network-link {
   display: inline-flex;
@@ -396,6 +406,7 @@ a.link:hover::before {
   color: var(--background-main);
   background-color: var(--focus);
   position: centre;
+  transition: color 250ms var(--bazier), background-color 250ms var(--bazier);
 
   /* background-color: var(--focus); */
   /* fill: darkmagenta; */
@@ -440,6 +451,7 @@ a.link:hover::before {
   fill: var(--focus);
   /* background-color: var(--focus); */
   outline: none;
+  transition: color 250ms var(--bazier), background-color 250ms var(--bazier);
 }
 
 .client-item a {
@@ -459,6 +471,7 @@ a.link:hover::before {
   outline: none;
   fill: var(--focus);
   color: var(--focus);
+  transition: color 250ms var(--bazier), background-color 250ms var(--bazier);
 }
 
 .client-icon {
@@ -514,11 +527,13 @@ a.adress {
 
 .social-links .teamate-network-link {
 background: rgba(255, 255, 255, 0.1);
+color: var(--background-main);
+fill: var(--herotext);
 }
 
 .social-links-text {
   font-family: Roboto, sans-serif;
-  width: 700;
+  font-weight: 700;
   size: 14px;
   line-height: 1.172;
   letter-spacing: 0.03em;
@@ -531,6 +546,7 @@ background: rgba(255, 255, 255, 0.1);
 .foot .teamate-network-link:focus {
   color: var(--background-main);
   background-color: var(--focus);
+  transition: color 250ms var(--bazier), background-color 250ms var(--bazier);
 }
 
 .nav-list::after {
