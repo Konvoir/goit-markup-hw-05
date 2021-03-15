@@ -590,6 +590,10 @@ background: rgba(255, 255, 255, 0.1);
 
 }
   
+.backdrop {
+  background-color: var(--background-thumb);
+}
+
   /* section {
     outline: rebeccapurple 1px dashed;
   }
