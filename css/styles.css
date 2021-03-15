@@ -609,7 +609,7 @@ background: rgba(255, 255, 255, 0.1);
   max-width: 528px;
   width: 100%;
   /* min-height: 581px; */
-  padding: 30px;
+  padding: 40px;
   max-height: 100vh;
   overflow-y: auto;
 }
